@@ -245,8 +245,7 @@ int main(int argc, char *argv[]) {
   if (argc == 2) {
 	  strncpy(if_name,argv[0],IFNAMSIZ-1);
 	  port = atoi(argv[1]);
-      cliserv = CLIENT;
-      strncpy(remote_ip,"127.0.0.1",15);
+      cliserv = SERVER;
       flags = IFF_TAP;
       header_len = ETH_HDR_LEN;
   } else
